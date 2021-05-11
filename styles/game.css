@@ -1,0 +1,15 @@
+button {
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: #c9de96;
+    background: -moz-linear-gradient(left, #c9de96 0%, #8ab66b 32%, #b1abfc 55%, #398235 90%);
+    background: -webkit-linear-gradient(left, #c9de96 0%, #8ab66b 32%, #b1abfc 55%, #398235 90%);
+    background: linear-gradient(to right, #c9de96 0%, #8ab66b 32%, #b1abfc 55%, #398235 90%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235', GradientType=1);
+    font-family: sans-serif;
+}
+
+h1 {
+    text-shadow: 1px 4px 3px #A65198;
+    font-family: sans-serif;
+}

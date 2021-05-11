@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хехе</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
+</head>
+
+<body>
+    <script type="text/JavaScript" src="./js/showcircle.js"></script>
+    <script type="text/JavaScript" src="./js/zalupka.js"></script>
+    <h6>АХХАХЫАХХЫАХЫАХЫХА</h6>
+    <div>
+        <button class="i2Style" onclick="go()">САЗДАЦ КРУК С ТЕКСТАМ</button>
+        <button class="i2Style" title="БЛЯ НАЖМИ СУКАААА" onclick="showCircle(900,300,100)">Крук два</button>
+    </div>
+    <div>
+        <button class="i2Style" onclick="hello()">ХУЙ</button>
+        <a href="lelele.html"><button class="i2Style">ЕБАНИНА КАКАЯ ТО</button></a>
+    </div>
+    <div>
+        <a href="./page2.html"><button class="i2Style">Кликер</button></a>
+    </div>
+    <div>
+        Шифрование: <input type="text" oninput="showCrypt(this.value)">
+        <h id="crypted">Текст: </h>
+    </div>
+    <div>
+        Расшифровка:<input type="text" oninput="showDecrypt(this.value)">
+        <h id="decrypted">Текст: </h>
+    </div>
+    <div>
+        <button class="i2Style" onclick="changeColor()">Сменить цвет</button>
+    </div>
+    <div>
+        <button class="i2Style" onclick="party()">Дискотека</button>
+    </div>
+    <div>
+        <h5 id='ranger'>0%</h5>
+        <input type="range" oninput="document.getElementById('ranger').innerText = this.value +'%';if(this.value == 100)party(2000)" min="0" max="1004" style="width: 5%;" value="0">
+    </div>
+    <script src="./js/changeColor.js"></script>
+    <script src="./js/crypt.js"></script>
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>

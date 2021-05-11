@@ -1,0 +1,45 @@
+.i2Style {
+    font: bold 13px Century Gothic, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    background: #430da8;
+    border: 2px solid #d5dbb6;
+    text-shadow: 0px -1px 1px #084d0c;
+    box-shadow: 0px 0px 7px #252b01;
+    -moz-box-shadow: 0px 0px 7px #252b01;
+    -webkit-box-shadow: 0px 0px 7px #252b01;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    width: 149px;
+    padding: 8px 14px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.i2Style:active {
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+.message-ball {
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.circle {
+    transition-property: width, height, margin-left, margin-top;
+    transition-duration: 3s;
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #8affc4;
+    border-radius: 50%;
+}
+
+.firsButton {
+    background-color: brown;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
