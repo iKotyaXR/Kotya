@@ -99,5 +99,6 @@ setInterval(() => {
         location.href = './index.html'
         userTrophy = []
     }
+    document.title = `Счет: ${score.toFixed(2)}`
     addRuble(perSecond)
 }, 1000)
