@@ -40,7 +40,7 @@ function changes(value) {
             document.body.style.backgroundColor = ""
         else
             document.body.style.backgroundColor = colors[random(0, colors.length)]
-    }, 1000 / value)
+    }, 4000 / value)
     clearInterval(prevInterval);
     prevInterval = b;
 
