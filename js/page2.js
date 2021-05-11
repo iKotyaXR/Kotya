@@ -43,21 +43,32 @@ function subRuble(value) {
 }
 
 function upgradeClick(value = 0, price = 0) {
-    if (score < price) return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+    if (score < price) {
+        new Audio('./sounds/error.mp3').play();
+        return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+    }
+    new Audio('./sounds/upgrade.mp3').play();
     subRuble(price)
     updating += value;
     return updateStats();
 }
 
 function upgradePerSecond(value = 0, price = 0) {
-    if (score < price) return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+    if (score < price) {
+        new Audio('./sounds/error.mp3').play();
+        return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+    }
+    new Audio('./sounds/upgrade.mp3').play();
     subRuble(price)
     perSecond += value;
     return updateStats();
 }
 
 function buyTrophy() {
-    if (score < trophyPrice) return alert(`У вас недостаточно денег!\nСтоимость трофея: ${format(trophyPrice)}`)
+    if (score < trophyPrice) {
+        new Audio('./sounds/error.mp3').play();
+        return alert(`У вас недостаточно денег!\nСтоимость трофея: ${format(trophyPrice)}`)
+    }
     subRuble(trophyPrice)
     trophyPrice *= 4;
     let randTrophy = random(0, avTropheys.length - 1);
