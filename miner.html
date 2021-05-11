@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+</head>
+
+<body>
+    <script type="text/JavaScript" src="./js/showcircle.js"></script>
+    <script type="text/JavaScript" src="./js/zalupka.js"></script>
+    <h6>АХХАХЫАХХЫАХЫАХЫХА</h6>
+    <div>
+        <button class="i2Style" onclick="go()">САЗДАЦ КРУК С ТЕКСТАМ</button>
+        <button class="i2Style" title="БЛЯ НАЖМИ СУКАААА" onclick="showCircle(900,300,100)">Крук два</button>
+    </div>
+    <div>
+        <button class="i2Style" onclick="hello()">ХУЙ</button>
+        <a href="lelele.html"><button class="i2Style">ЕБАНИНА КАКАЯ ТО</button></a>
+    </div>
+    <div>
+        <a href="./page2.html"><button class="i2Style">Кликер</button></a>
+    </div>
+    <div>
+        Шифрование: <input type="text" oninput="showCrypt(this.value)">
+        <h id="crypted">Текст: </h>
+    </div>
+    <div>
+        Расшифровка:<input type="text" oninput="showDecrypt(this.value)">
+        <h id="decrypted">Текст: </h>
+    </div>
+
+    <div>
+        <h5 id='ranger'>0%</h5>
+        <input type="range" oninput="document.getElementById('ranger').innerText = this.value +'%';changes(this.value)" min="0" max="500" style="width: 20%;" value="0">
+    </div>
+    <script src="./js/changeColor.js"></script>
+    <script src="./js/crypt.js"></script>
+    <!--<script src="./js/script.js"></script>-->
+</body>
+
+</html>
