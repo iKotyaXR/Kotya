@@ -12,6 +12,14 @@ let statsElement = document.getElementById('stats')
 window.onload = () => {
     addRuble(0);
     score = +localStorage.getItem('score');
+    let localUpdates = localStorage.getItem('updating')
+    let localPerSecond = localStorage.getItem('perSecond')
+    if (!localUpdates || localUpdates == 0)
+        localStorage.setItem('updating', updating)
+    if (!localPerSecond || localPerSecond == 0)
+        localStorage.setItem('perSecond', perSecond)
+    updating = +localStorage.getItem('updating');
+    perSecond = +localStorage.getItem('perSecond');
     scoreElement.innerText = `Баланс: ` + format(score)
     updateStats()
 };
@@ -80,7 +88,9 @@ function buyTrophy() {
     return updateStats();
 }
 setInterval(() => {
-    localStorage.setItem('score', score)
+    localStorage.setItem('score', score);
+    localStorage.setItem('updating', updating);
+    localStorage.setItem('perSecond', perSecond);
     let date = new Date(Date.now() - gameTimer)
     document.getElementById("Timer").innerText = `Время игры: ${String(date.getUTCHours()).padStart(2,0)}:${String(date.getMinutes()).padStart(2,0)}:${String(date.getSeconds()).padStart(2,0)}`
     if (userTrophy.length === tropheys.length) {
