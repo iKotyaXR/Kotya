@@ -45,7 +45,7 @@ function subRuble(value) {
 function upgradeClick(value = 0, price = 0) {
     if (score < price) {
         new Audio('./sounds/error.mp3').play();
-        return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+        return setTimeout(() => { alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`) }, 10)
     }
     new Audio('./sounds/upgrade.mp3').play();
     subRuble(price)
@@ -56,7 +56,7 @@ function upgradeClick(value = 0, price = 0) {
 function upgradePerSecond(value = 0, price = 0) {
     if (score < price) {
         new Audio('./sounds/error.mp3').play();
-        return alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`)
+        return setTimeout(() => { alert(`У вас недостаточно денег!\nСтоимость этого улучшения: ${format(price)}`) }, 10)
     }
     new Audio('./sounds/upgrade.mp3').play();
     subRuble(price)
@@ -67,7 +67,7 @@ function upgradePerSecond(value = 0, price = 0) {
 function buyTrophy() {
     if (score < trophyPrice) {
         new Audio('./sounds/error.mp3').play();
-        return alert(`У вас недостаточно денег!\nСтоимость трофея: ${format(trophyPrice)}`)
+        return setTimeout(() => { alert(`У вас недостаточно денег!\nСтоимость трофея: ${format(trophyPrice)}`) }, 10)
     }
     subRuble(trophyPrice)
     trophyPrice *= 4;
