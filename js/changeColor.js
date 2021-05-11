@@ -29,3 +29,19 @@ function party(ms = 10000) {
         document.body.style.backgroundColor = ""
     }, ms)
 }
+let prevInterval;
+
+function changes(value) {
+    if (value === 0) {
+        return document.body.style.backgroundColor = ""
+    }
+    let b = setInterval(() => {
+        if (1000 / value == Infinity)
+            document.body.style.backgroundColor = ""
+        else
+            document.body.style.backgroundColor = colors[random(0, colors.length)]
+    }, 1000 / value)
+    clearInterval(prevInterval);
+    prevInterval = b;
+
+}
