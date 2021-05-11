@@ -68,7 +68,7 @@ function buyTrophy() {
 }
 setInterval(() => {
     let date = new Date(Date.now() - gameTimer)
-    document.getElementById("Timer").innerText = `Время игры: ${String(date.getD()).padStart(2,0)}:${String(date.getMinutes()).padStart(2,0)}:${String(date.getSeconds()).padStart(2,0)}`
+    document.getElementById("Timer").innerText = `Время игры: ${String(date.getUTCHours()).padStart(2,0)}:${String(date.getMinutes()).padStart(2,0)}:${String(date.getSeconds()).padStart(2,0)}`
     if (userTrophy.length === tropheys.length) {
         alert(`Вы купили все трофеи`)
         alert(`Спасибо за игру!`)
